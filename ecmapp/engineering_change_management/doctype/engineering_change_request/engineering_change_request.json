@@ -1,0 +1,362 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-24 15:17:58.185949",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "naming_series",
+  "date",
+  "date_required",
+  "project_name",
+  "column_break_ypkz1",
+  "requested_by",
+  "requested_by_name",
+  "item_changed",
+  "new_item",
+  "change_detail_tab",
+  "change_description",
+  "change_reason",
+  "impact_tab",
+  "impact_of_change_vs_no_change_section",
+  "cost_change",
+  "scope_change",
+  "resources_change",
+  "quality_change",
+  "deadline_change",
+  "column_break_ghkqg",
+  "cost_no_change",
+  "scope_no_change",
+  "resources_no_change",
+  "quality_no_change",
+  "deadline_no_change",
+  "alternative_section",
+  "alternative_to_proposed_change",
+  "action_tab",
+  "proposed_action",
+  "possible_risk_factors",
+  "cost_tab",
+  "labour_cost_section",
+  "duration_man_hours",
+  "cost_per_man_hour",
+  "estimated_labour_cost",
+  "material_cost_section",
+  "estimated_material_cost",
+  "other_costs_section",
+  "estimated_services_cost",
+  "other_estimated_cost",
+  "total_estimated_cost_section",
+  "total_estimated_cost",
+  "approval_tab",
+  "approved_by",
+  "approved_by_name",
+  "approval_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ECR-.YYYY.-.MM.-.###"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "date_required",
+   "fieldtype": "Date",
+   "label": "Date Required"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project Name",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_ypkz1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "requested_by_name",
+   "fieldtype": "Data",
+   "label": "Requested by (Name)"
+  },
+  {
+   "fieldname": "change_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Change Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Engineering Change Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "change_description",
+   "fieldtype": "Small Text",
+   "label": "Change Description"
+  },
+  {
+   "fieldname": "change_reason",
+   "fieldtype": "Small Text",
+   "label": "Change Reason"
+  },
+  {
+   "fieldname": "cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Cost"
+  },
+  {
+   "fieldname": "estimated_labour_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Labour Cost"
+  },
+  {
+   "fieldname": "estimated_services_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Services Cost"
+  },
+  {
+   "fieldname": "other_estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Other Estimated Cost"
+  },
+  {
+   "fieldname": "total_estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Total Estimated Cost"
+  },
+  {
+   "fieldname": "approval_tab",
+   "fieldtype": "Tab Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_by_name",
+   "fieldtype": "Data",
+   "label": "Approved by (Name)"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "fieldname": "action_tab",
+   "fieldtype": "Tab Break",
+   "label": "Action"
+  },
+  {
+   "fieldname": "proposed_action",
+   "fieldtype": "Small Text",
+   "label": "Proposed Action"
+  },
+  {
+   "fieldname": "possible_risk_factors",
+   "fieldtype": "Small Text",
+   "label": "Possible Risk Factors"
+  },
+  {
+   "fieldname": "labour_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Labour Cost"
+  },
+  {
+   "fieldname": "cost_per_man_hour",
+   "fieldtype": "Currency",
+   "label": "Cost per Man Hour"
+  },
+  {
+   "fieldname": "material_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Material Cost"
+  },
+  {
+   "fieldname": "estimated_material_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Material Cost"
+  },
+  {
+   "fieldname": "other_costs_section",
+   "fieldtype": "Section Break",
+   "label": "Other Costs"
+  },
+  {
+   "fieldname": "total_estimated_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Total estimated Cost"
+  },
+  {
+   "fieldname": "impact_tab",
+   "fieldtype": "Tab Break",
+   "label": "Impact"
+  },
+  {
+   "fieldname": "impact_of_change_vs_no_change_section",
+   "fieldtype": "Section Break",
+   "label": "Impact of Change vs No Change"
+  },
+  {
+   "fieldname": "cost_change",
+   "fieldtype": "Small Text",
+   "label": "Cost (change)"
+  },
+  {
+   "fieldname": "scope_change",
+   "fieldtype": "Small Text",
+   "label": "Scope (change)"
+  },
+  {
+   "fieldname": "resources_change",
+   "fieldtype": "Small Text",
+   "label": "Resources (change)"
+  },
+  {
+   "fieldname": "quality_change",
+   "fieldtype": "Small Text",
+   "label": "Quality (change)"
+  },
+  {
+   "fieldname": "deadline_change",
+   "fieldtype": "Small Text",
+   "label": "Deadline (change)"
+  },
+  {
+   "fieldname": "column_break_ghkqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_no_change",
+   "fieldtype": "Small Text",
+   "label": "Cost (no change)"
+  },
+  {
+   "fieldname": "scope_no_change",
+   "fieldtype": "Small Text",
+   "label": "Scope (no change)"
+  },
+  {
+   "fieldname": "resources_no_change",
+   "fieldtype": "Small Text",
+   "label": "Resources (no change)"
+  },
+  {
+   "fieldname": "quality_no_change",
+   "fieldtype": "Small Text",
+   "label": "Quality (no change)"
+  },
+  {
+   "fieldname": "deadline_no_change",
+   "fieldtype": "Small Text",
+   "label": "Deadline (no change)"
+  },
+  {
+   "fieldname": "alternative_section",
+   "fieldtype": "Section Break",
+   "label": "Alternative"
+  },
+  {
+   "fieldname": "alternative_to_proposed_change",
+   "fieldtype": "Small Text",
+   "label": "Alternative to proposed change"
+  },
+  {
+   "fieldname": "item_changed",
+   "fieldtype": "Link",
+   "label": "Item Changed",
+   "options": "Item"
+  },
+  {
+   "fieldname": "new_item",
+   "fieldtype": "Link",
+   "label": "New Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "duration_man_hours",
+   "fieldtype": "Int",
+   "label": "Duration (Man hours)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-29 12:49:45.889727",
+ "modified_by": "Administrator",
+ "module": "Engineering Change Management",
+ "name": "Engineering Change Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Maintenance Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
