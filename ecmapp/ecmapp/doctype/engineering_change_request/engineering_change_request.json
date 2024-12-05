@@ -1,0 +1,379 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-10-07 09:32:58.123439",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "section_break_sowc",
+  "naming_series",
+  "amended_from",
+  "date",
+  "date_required",
+  "project_name",
+  "name_of_project",
+  "issue",
+  "column_break_ufml",
+  "requested_by",
+  "requested_by_name",
+  "item_changed",
+  "default_bom",
+  "change_detail_tab",
+  "selected_items",
+  "change_description",
+  "change_reason",
+  "impact_tab",
+  "impact_of_change_vs_no_change_section",
+  "cost_change",
+  "scope_change",
+  "resources_change",
+  "quality_change",
+  "deadline_change",
+  "backdatefuture_change",
+  "column_break_cdoq",
+  "cost_no_change",
+  "scope_no_change",
+  "resources_no_change",
+  "quality_no_change",
+  "deadline_no_change",
+  "backdatefuture_no_change",
+  "alternative_section",
+  "alternative_to_proposed_change",
+  "action_tab",
+  "proposed_action",
+  "possible_risk_factors",
+  "cost_tab",
+  "labour_cost_section",
+  "duration_man_hours",
+  "cost_per_man_hour",
+  "estimated_labour_cost",
+  "material_cost_section",
+  "estimated_material_cost",
+  "other_costs_section",
+  "estimated_services_cost",
+  "other_estimated_cost",
+  "total_estimated_cost_section",
+  "total_estimated_cost",
+  "approval_tab",
+  "approved_by",
+  "approved_by_name",
+  "approval_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "section_break_sowc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ECR-.YYYY.-.MM.-.###"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Engineering Change Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "date_required",
+   "fieldtype": "Date",
+   "label": "Date required"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "name_of_project",
+   "fieldtype": "Data",
+   "label": "Project name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Link",
+   "label": "Issue",
+   "options": "Issue"
+  },
+  {
+   "fieldname": "column_break_ufml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "requested_by_name",
+   "fieldtype": "Data",
+   "label": "Requested by (Name)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_changed",
+   "fieldtype": "Link",
+   "label": "Build applicable to this change",
+   "options": "Item"
+  },
+  {
+   "fieldname": "default_bom",
+   "fieldtype": "Link",
+   "label": "Default BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "change_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Change Detail"
+  },
+  {
+   "fieldname": "selected_items",
+   "fieldtype": "Table",
+   "label": "Select Items to be changed",
+   "options": "Selected Items"
+  },
+  {
+   "fieldname": "change_description",
+   "fieldtype": "Small Text",
+   "label": "Change Description"
+  },
+  {
+   "fieldname": "change_reason",
+   "fieldtype": "Small Text",
+   "label": "Change Reason"
+  },
+  {
+   "fieldname": "impact_tab",
+   "fieldtype": "Tab Break",
+   "label": "Impact"
+  },
+  {
+   "fieldname": "impact_of_change_vs_no_change_section",
+   "fieldtype": "Section Break",
+   "label": "Impact of Change vs No Change"
+  },
+  {
+   "fieldname": "cost_change",
+   "fieldtype": "Small Text",
+   "label": "Cost (change)"
+  },
+  {
+   "fieldname": "scope_change",
+   "fieldtype": "Small Text",
+   "label": "scope (change)",
+   "options": "scope_change"
+  },
+  {
+   "fieldname": "resources_change",
+   "fieldtype": "Small Text",
+   "label": "Resources (change)"
+  },
+  {
+   "fieldname": "quality_change",
+   "fieldtype": "Small Text",
+   "label": "Quality (change)"
+  },
+  {
+   "fieldname": "deadline_change",
+   "fieldtype": "Small Text",
+   "label": "Deadline (change)"
+  },
+  {
+   "fieldname": "backdatefuture_change",
+   "fieldtype": "Small Text",
+   "label": "Backdate/Future (change)"
+  },
+  {
+   "fieldname": "column_break_cdoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_no_change",
+   "fieldtype": "Small Text",
+   "label": "Cost (no change)"
+  },
+  {
+   "fieldname": "scope_no_change",
+   "fieldtype": "Small Text",
+   "label": "Scope (no change)"
+  },
+  {
+   "fieldname": "resources_no_change",
+   "fieldtype": "Small Text",
+   "label": "Resources (no change)"
+  },
+  {
+   "fieldname": "quality_no_change",
+   "fieldtype": "Small Text",
+   "label": "Qualilty (no change)"
+  },
+  {
+   "fieldname": "deadline_no_change",
+   "fieldtype": "Small Text",
+   "label": "Deadline (no change)"
+  },
+  {
+   "fieldname": "backdatefuture_no_change",
+   "fieldtype": "Small Text",
+   "label": "Backdate/Future (no change)"
+  },
+  {
+   "fieldname": "alternative_section",
+   "fieldtype": "Section Break",
+   "label": "Alternative"
+  },
+  {
+   "fieldname": "alternative_to_proposed_change",
+   "fieldtype": "Small Text",
+   "label": "Alternative to proposed change"
+  },
+  {
+   "fieldname": "action_tab",
+   "fieldtype": "Tab Break",
+   "label": "Action"
+  },
+  {
+   "fieldname": "proposed_action",
+   "fieldtype": "Small Text",
+   "label": "Proposed Action"
+  },
+  {
+   "fieldname": "possible_risk_factors",
+   "fieldtype": "Small Text",
+   "label": "Possible Risk Factors"
+  },
+  {
+   "fieldname": "cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Cost"
+  },
+  {
+   "fieldname": "labour_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Labour Cost"
+  },
+  {
+   "fieldname": "duration_man_hours",
+   "fieldtype": "Int",
+   "label": "Duration (man hours)"
+  },
+  {
+   "fieldname": "cost_per_man_hour",
+   "fieldtype": "Currency",
+   "label": "Cost per man hour"
+  },
+  {
+   "fieldname": "material_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Material Cost"
+  },
+  {
+   "fieldname": "estimated_material_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Material Cost"
+  },
+  {
+   "fieldname": "other_costs_section",
+   "fieldtype": "Section Break",
+   "label": "Other Costs"
+  },
+  {
+   "fieldname": "estimated_services_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Services Cost"
+  },
+  {
+   "fieldname": "other_estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Other Estimated Cost"
+  },
+  {
+   "fieldname": "total_estimated_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Total Estimated Cost"
+  },
+  {
+   "fieldname": "total_estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Total Estimated Cost"
+  },
+  {
+   "fieldname": "approval_tab",
+   "fieldtype": "Tab Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approved_by_name",
+   "fieldtype": "Data",
+   "label": "Approved by (name)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Date",
+   "label": "Approval Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "estimated_labour_cost",
+   "fieldtype": "Currency",
+   "label": "Estimated Labour Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-05 05:25:05.021158",
+ "modified_by": "Administrator",
+ "module": "Ecmapp",
+ "name": "Engineering Change Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

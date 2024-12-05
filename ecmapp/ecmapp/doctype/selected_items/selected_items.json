@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-07 10:07:50.440751",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "old_item",
+  "old_item_name",
+  "new_item",
+  "new_item_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "old_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Old Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "old_item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Old Item Name"
+  },
+  {
+   "fieldname": "new_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "New Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "new_item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "New Item Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-07 15:29:32.925202",
+ "modified_by": "Administrator",
+ "module": "Ecmapp",
+ "name": "Selected Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
