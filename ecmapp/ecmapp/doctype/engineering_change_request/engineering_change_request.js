@@ -6,13 +6,27 @@ frappe.ui.form.on('Engineering Change Request', {
 		// your code here
 		// add custom button after first save
 		if (!frm.doc.__islocal && frm.doc.item_changed) {
-			frm.add_custom_button('Get Related Sales Orders', function() {
+			frm.add_custom_button(__('Get Related Sales Orders'), function() {
 				// route to list-view of Sales Orders
 				if (frm.doc.item_changed) {
 					frappe.route_options = {"item_code": frm.doc.item_changed};
 					frappe.set_route('List','Sales Order');
 				}
 			}).addClass('btn-primary');
+//			frm.add_custom_button(__('Route to Project'), function() {
+//				// route to list-view of Sales Orders
+//				if (frm.doc.project_name) {
+//					frappe.route_options = {"name": frm.doc.project_name};
+//					frappe.set_route('List','Project');
+//				}
+//			},__('ECR Functions'));
+//			frm.add_custom_button(__('Route to Issue'), function() {
+//				// route to list-view of Sales Orders
+//				if (frm.doc.issue) {
+//					frappe.route_options = {"name": frm.doc.issue};
+//					frappe.set_route('List','Issue');
+//				}
+//			},__('ECR Functions'));
 		}
 	},
 	// fetch requestor employee name
